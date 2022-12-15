@@ -12,5 +12,5 @@ def test_add_to_basket_button_search(browser):
         cart_button = browser.find_element(By.CLASS_NAME, "btn-add-to-basket")
     except NoSuchElementException as error:
         cart_button = None
-        assert cart_button is not None, 'Button Add_to_basket not found'
+        assert cart_button is not None, f'{type(error)} - Button Add_to_basket not found'
         
